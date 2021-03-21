@@ -26,19 +26,20 @@
         }
 
         body {
-            color: #b6b6be;
-            background-color: rgb(40, 40, 50);
+            color: #0d0d13;;
+            background-color: rgb(241, 241, 255);
+            font-size: 1.25rem;
         }
 
         .link-secondary {
-            color: #ffffff;
+            /* color: #ffffff; */
         }
 
         .tagline {
             max-width: 650px;
             margin: 0 auto 1em;
             text-align: center;
-            color: #ffffff;
+            /* color: #ffffff; */
         }
 
         .intro-video 
@@ -48,18 +49,44 @@
             height: 314px;
         }
 
-        h2 {
-            margin-top: 1em;
-            color: #ffffff;
+        h2, h3 {
+            margin: 1.5em 0 1em;
         }
 
+        h2 {
+            margin-top: 1em;
+            /* color: #ffffff; */
+        }
+
+        .contact-me {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-me .field-row {
+            position: relative;
+            height: 60px;
+            display: inline-block;
+        }
+
+        .contact-me .field-row input, 
+        .contact-me .field-row textarea,
+        .contact-me .field-row button {
+            position: absolute;
+            left: 120px;
+            width: 400px;
+        }
+
+        .contact-me button {
+            margin-top: 20px;
+        }
     </style>
     <div class="container">
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex">
             <a class="p-2 link-secondary" href="./index.html">Let’s work together </a>
-            <a class="p-2 link-secondary" href="./mission.html">My Mission</a>
-            <a class="p-2 link-secondary" href="./stories.html">Stories</a>
+            <!-- <a class="p-2 link-secondary" href="./mission.html">My Mission</a> -->
+            <a class="p-2 link-secondary" href="./blog.html">Blog</a>
             </nav>
         </div>
 
@@ -99,7 +126,21 @@
         </p>
         <p>
 
-
+        <form class="contact-me" action="https://formspree.io/f/myybqbep" method="POST">
+            <label class="field-row">
+                Your email:
+                <input type="text" name="_replyto">
+            </label>
+            <br />
+            <label class="field-row">
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <br />
+            <div class="field-row">
+                <button type="submit">>>> Contact Me <<<</button>
+            </div>
+        </form>
 
 
 
